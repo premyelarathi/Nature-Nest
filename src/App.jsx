@@ -12,6 +12,7 @@ import { Sec } from "./Shop/sec"
 import { Reg } from "./Shop/Reg"
 import { Log } from "./Shop/Log"
 import CartPage from "./Shop/CartPage"
+import Checkout from "./Shop/checkout"
 import Footer from "./footer/footer"
 
 export function PagesWithNavbar() {
@@ -42,6 +43,7 @@ function App() {
           <Route path="/Wishlist" element={<main className="p-8 text-center"><h1 className="text-3xl font-bold">Wishlist</h1><p className="mt-4">No items added in wishlist</p></main>} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/Profile" element={<main className="p-8 text-center"><h1 className="text-3xl font-bold">Profile</h1><p className="mt-4">Your profile information will appear here.</p></main>} />
+          <Route path="/Checkout" element={<Checkout />} />
         </Route>
     </Routes>
   )

@@ -82,15 +82,17 @@ export const Products = () => {
 
             </div>
 
-            <button
-              onClick={() => {
-                AddCart(product)
-                navigate('/Cart')
-              }}
-              className="bg-green-700 text-white py-3 rounded-lg mt-6 cursor-pointer"
-            >
-              Add to Cart
-            </button>
+
+<button
+  onClick={() => {
+    AddCart({ ...product, quantity })
+    navigate('/Cart')
+  }}
+  className="bg-green-700 text-white py-3 rounded-lg mt-6 cursor-pointer"
+>
+  Add to Cart
+</button>
+
 
           </div>
 
